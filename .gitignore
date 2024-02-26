@@ -1,1 +1,3 @@
 *.ipynb
+gastos.csv
+/__pycache__
