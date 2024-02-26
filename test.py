@@ -4,7 +4,6 @@ import json
 
 df = pd.read_csv('data/gastos.csv')
 vals = df.groupby('Año')['Apropiación a precios corrientes'].sum().to_dict()
-print(vals)
 
 with open('dictios/dic_vals_test.json', 'r') as ds:
     dic_vals = json.load(ds)
