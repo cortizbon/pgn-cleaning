@@ -60,5 +60,3 @@ data = (pd
  .rename(columns={'level_0':'Año'}))
 
 data.to_csv('data/gastos.csv', index=False)
-
-
