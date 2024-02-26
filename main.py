@@ -21,7 +21,7 @@ for i in range(2013, 2023):
   renglon = get_row_with_column_names('data/Decreto_de_liquidacion.xlsx',
                                       f"Gastos PGN {i}")
   
-  df = pd.read_excel('Decreto_de_liquidacion.xlsx',
+  df = pd.read_excel('data/Decreto_de_liquidacion.xlsx',
                      sheet_name=f"Gastos PGN {i}", skiprows=renglon)
   
   df.columns = [s.strip() for s in df.columns]
